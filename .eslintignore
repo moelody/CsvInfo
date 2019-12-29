@@ -1,0 +1,8 @@
+lib
+lib_unusual
+dist
+build
+src/script
+node_modules
+/*.js
+!index.js

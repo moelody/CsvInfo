@@ -1,0 +1,44 @@
+{
+  "author": "yf",
+  "main": "index.js",
+  "name": "sheetcsv",
+  "version": "1.0.0",
+  "description": "a script for adobe after effects and aegisub quick interact and edit karaoke effect",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "webpack --config ./build/webpack.dev.js --watch --progress --hide-modules",
+    "test": "webpack --config ./build/webpack.dev.js --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js --progress --hide-modules",
+    "update": "yarn upgrade-interactive --latest",
+    "lint": "eslint . --quiet",
+    "fix": "eslint . --fix --quiet"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "after-effects": "^0.4.15",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "3",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "file-loader": "^4.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "osascript": "^1.2.0",
+    "prettier": "^1.19.1",
+    "unicode-loader": "^1.0.7",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.2"
+  }
+}
