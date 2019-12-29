@@ -119,7 +119,11 @@ var refresh = function(global) {
 }
 if (!(window instanceof Panel)) {
   $.global.callbackBeforeWebpackBuild = function() {
-    $.global.yp[process.env.EX].win && $.global.yp[process.env.EX].win.close()
+    try {
+      var ex = $.global.yp[process.env.EX]
+      ex.win && ex.win.close()
+      ex.settingsWin && ex.settingsWin.close()
+    } catch (e) {}
   }
   $.global.callbackBeforeWebpackBuild()
 }
